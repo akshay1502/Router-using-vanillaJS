@@ -9,26 +9,25 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+nav {
+  background: rebeccapurple;
+}
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 4rem;
+  padding: 1rem;
   font-size: 2rem;
-  border-bottom: 2px darkslategray groove;
+  font-weight: bold;
 }
 nav ul li a{
   text-decoration: none;
-  color: #747677;
-  font-weight: bold;
+  color: #a197aa;
 }
-nav ul li a:hover{
-  color: black;
-}
+
 .active {
-  color: black;
+  color: white;
 }
 
 #root {
@@ -48,4 +47,14 @@ footer {
   text-align: center;
   padding-bottom: 10px;
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width:450px) {
+  nav ul {
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+  }
+  nav ul li {
+    margin-right: 10px;
+  }
 }
