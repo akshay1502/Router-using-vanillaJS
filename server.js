@@ -2,7 +2,7 @@
 const express = require('express')
 const app = express()
 
-app.use(`${process.env.PORT}/static` || '/static', express.static('public'));
+app.use('/static', express.static('public'));
 
 app.get('/*', (req,res) => {
   res.sendFile(__dirname+"/"+"index.html");
