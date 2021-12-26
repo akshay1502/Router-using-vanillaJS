@@ -31,15 +31,15 @@ nav ul li a{
 }
 
 #root {
-  padding: 3em 2em;
+  padding: 3rem 2rem;
   flex-grow: 1;
 }
 #root h1{
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 #root p {
   margin-top: .5rem;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 footer {
@@ -55,6 +55,12 @@ footer {
     font-size: 1.5rem;
   }
   nav ul li {
-    margin-right: 10px;
+    margin: 4px 10px 4px 0;
+  }
+  #root {
+    padding: 3rem 1.5rem;
+  }
+  #root p {
+    margin-top: 1rem;
   }
 }
